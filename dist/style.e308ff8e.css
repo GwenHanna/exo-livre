@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+/*Initialisation*/
+:root{
+    --borderForm: 1px solid #000000;
+    --bordeCard:1px solid #000000;
+    --bordeBtn:1px solid #000000;
+    --premary: #000;
+    --secondary: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Formulaire*/
+
+form{
+    min-width: 500px;
+    border: var(--borderForm);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 0.9rem;
+}
+ p, .btn-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.inputs{
+    width: 80%;
+}
+input{
+    outline: none;
+    padding: 5px;
+}
+.btn-form{
+    width: 80%;
+}
+.btn{
+    flex-basis: 50%;
+    padding: 5px;
+    border: var(--premary);
+    margin-top: 20px;
+    max-width: 400px;
+
+}
+#envoi{
+    background: var(--premary);
+    color: var(--secondary);
+}
+#clear{
+    background: var(--secondary);
+    color: var(--premary);
+    border: var(--borderForm);
+}
+p{
+    flex-direction: column;
+}
+
+/*Container*/
+
+#container-cards{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+/*Cards*/
+
+.card{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    border: var(--bordeCard);
+    padding: 20px;
+}
+.card h3{
+    background: var(--premary);
+    color: var(--secondary);
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+.card p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.btns-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.btns-card button{
+    flex-basis: 40%;
+    border: var(--bordeBtn);
+    background: var(--secondary);
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
